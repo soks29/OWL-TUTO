@@ -2,13 +2,13 @@
 <templates xml:space="preserve">
     <t t-name="odoo_owl.TodoList" owl="1">
         <div class="todo-list-container">
-            <div class="row mx-2 mt-3">
-                <div class="col-lg-6">
+            <div class="row mx-2 mt-3 mb-3">
+                <div class="col-lg-2">
                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             t-on-click="addTask">New</button>
                 </div>
-                <div class="col-lg-6">
-                    <input type="text" class="form-control" placeholder="Search here..." t-ref="search-input"
+                <div class="col-lg-10 d-flex align-items-center">
+                    <input type="text" class="form-control me-2" placeholder="Search here..." t-ref="search-input"
                            t-on-keyup="searchTasks"/>
                     <button class="btn btn-outline-primary" t-on-click="searchTasks">Search</button>
                 </div>
@@ -19,30 +19,29 @@
                       <thead>
                         <tr>
                           <th scope="col">Task name</th>
-                            <th scope="col">Completed</th>
+                            <th scope="col">Color</th>
                             <th scope="col"/>
                         </tr>
                       </thead>
                         <tbody>
                         <tr t-foreach="state.taskList" t-as="task" t-key="task.id">
-                          <td>
+                            <td>
                               <div class="form-check">
                                   <input class="form-check-input" type="checkbox" value="" t-att-id="task.id"
                                          t-att-checked="task.completed" t-on-click="(e)=>this.toggleTask(e,task)"/>
-                                  <label class="form-check-label" t-att-for="task.id"
-                                         t-attf-class="#{task.completed and 'text-decoration-line-through'}">
-                                    <span t-esc="task.name"/>
+                                  <label class="form-check-label" t-att-for="task.id">
+                                        <span t-esc="task.name"/>
                                   </label>
                               </div>
-                          </td>
+                            </td>
                             <td>
-                              <input type="color" class="form-control form-control-color" id="exampleColorInput"
-                                     t-att-value="task.color" title="Choose your color"
-                                     t-on-click="(e)=>this.updateColor(e,task)"/>
-                          </td>
+                                <input type="color" class="form-control form-control-color" id="exampleColorInput"
+                                       t-att-value="task.color" title="Choose your color"
+                                       t-on-click="(e)=>this.updateColor(e,task)"/>
+                            </td>
                             <td>
-                              <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                      t-on-click="()=>this.editTask(task)">Edit</button>
+                                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        t-on-click="()=>this.editTask(task)">Edit</button>
                                 <button class="btn btn-danger" t-on-click="()=>this.deleteTask(task)">Delete</button>
                           </td>
                         </tr>

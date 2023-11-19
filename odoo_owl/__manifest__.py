@@ -14,10 +14,11 @@
     'website': "https://www.yourcompany.com",
     'category': 'OWL',
     'version': '16.0.1.0.1',
-    'depends': ['base'],
+    'depends': ['base', 'contacts', 'web', 'sale'],
     'data': [
         'security/ir.model.access.csv',
         'views/todo_list_views.xml',
+        'views/res_partner_views.xml',
     ],
     'installable': True,
     'application': True,
