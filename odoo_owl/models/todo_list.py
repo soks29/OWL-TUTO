@@ -12,3 +12,9 @@ class OdooTodoList(models.Model):
     name = fields.Char(string="Task name")
     completed = fields.Boolean()
     color = fields.Char()
+
+    _sql_constraints = [
+        ('name_uniq', 'unique (name)', 'The name must be unique !')
+    ]
+
+

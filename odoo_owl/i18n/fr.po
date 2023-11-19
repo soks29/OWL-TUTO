@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_owl
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-18 16:39+0000\n"
+"PO-Revision-Date: 2023-11-18 16:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_owl
+#: model:ir.model.fields,field_description:odoo_owl.field_odoo_todo_list__color
+msgid "Color"
+msgstr "Couleur"
+
+#. module: odoo_owl
+#: model:ir.model.fields,field_description:odoo_owl.field_odoo_todo_list__completed
+msgid "Completed"
+msgstr "Terminé"
+
+#. module: odoo_owl
+#: model:ir.model.fields,field_description:odoo_owl.field_odoo_todo_list__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: odoo_owl
+#: model:ir.model.fields,field_description:odoo_owl.field_odoo_todo_list__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: odoo_owl
+#: model:ir.model.fields,field_description:odoo_owl.field_odoo_todo_list__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: odoo_owl
+#: model:ir.model.fields,field_description:odoo_owl.field_odoo_todo_list__id
+msgid "ID"
+msgstr ""
+
+#. module: odoo_owl
+#: model:ir.model.fields,field_description:odoo_owl.field_odoo_todo_list____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: odoo_owl
+#: model:ir.model.fields,field_description:odoo_owl.field_odoo_todo_list__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: odoo_owl
+#: model:ir.model.fields,field_description:odoo_owl.field_odoo_todo_list__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour par"
+
+#. module: odoo_owl
+#. odoo-javascript
+#: code:addons/odoo_owl/static/src/components/todo_list/todo_list.xml:0
+#, python-format
+msgid "OWL Todo List"
+msgstr "Liste complète OWL"
+
+#. module: odoo_owl
+#: model:ir.model,name:odoo_owl.model_odoo_todo_list
+msgid "OWL Todo list App"
+msgstr ""
+
+#. module: odoo_owl
+#: model:ir.ui.menu,name:odoo_owl.menu_owl_odoo
+msgid "OWL Tuto"
+msgstr ""
+
+#. module: odoo_owl
+#: model:ir.model.fields,field_description:odoo_owl.field_odoo_todo_list__name
+msgid "Task name"
+msgstr "Nom tâche"
+
+#. module: odoo_owl
+#: model:ir.actions.client,name:odoo_owl.action_odoo_owl_todo_list_js
+msgid "Todo List OWL"
+msgstr "OWL Liste complète"
+
+#. module: odoo_owl
+#: model:ir.actions.act_window,name:odoo_owl.odoo_todo_list_action
+#: model:ir.ui.menu,name:odoo_owl.menu_owl_odoo_list
+msgid "Todo list"
+msgstr "Liste complète"
+
+#. module: odoo_owl
+#: model:ir.ui.menu,name:odoo_owl.menu_owl_odoo_list_js
+msgid "Todo list OWL"
+msgstr "OWL Liste complète"
+
+#. module: odoo_owl
+#: model_terms:ir.ui.view,arch_db:odoo_owl.odoo_todo_list_view_form
+msgid "odoo todo list form"
+msgstr ""
+
+#. module: odoo_owl
+#: model_terms:ir.ui.view,arch_db:odoo_owl.odoo_todo_list_view_tree
+msgid "odoo todo list tree"
+msgstr ""
