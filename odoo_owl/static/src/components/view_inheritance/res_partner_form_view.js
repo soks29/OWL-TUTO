@@ -3,7 +3,7 @@
 import { registry } from '@web/core/registry';
 import { formView } from '@web/views/form/form_view';
 import { FormController } from '@web/views/form/form_controller';
-import { useService } from "@web/core/utils/hooks"
+import { useService } from "@web/core/utils/hooks";
 
 class ResPartnerFormController extends FormController {
     setup(){

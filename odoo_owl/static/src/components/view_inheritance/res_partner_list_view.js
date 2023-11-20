@@ -3,7 +3,7 @@
 import { registry } from '@web/core/registry';
 import { listView } from '@web/views/list/list_view';
 import { ListController } from '@web/views/list/list_controller';
-import { useService } from "@web/core/utils/hooks"
+import { useService } from "@web/core/utils/hooks";
 
 class ResPartnerListController extends ListController {
     setup(){
